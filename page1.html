@@ -10,6 +10,7 @@
       margin: 0;
       padding: 0;
       line-height: 1.6;
+      transition: background-color 0.3s ease;
     }
     header, footer {
       background: #333;
@@ -35,6 +36,25 @@
       padding: 10px;
       width: 30%;
     }
+    button {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    #toTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 50%;
+    }
   </style>
 </head>
 <body>
@@ -50,6 +70,7 @@
   <section id="about">
     <h2>About Me</h2>
     <p>Hello! I'm a frontend developer passionate about creating interactive and user-friendly websites.</p>
+    <button onclick="changeBackground()">Change Background</button>
   </section>
 
   <section id="projects">
@@ -72,11 +93,21 @@
 
   <section id="contact">
     <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+    <form id="contactForm">
+      <label>Name: <input type="text" id="name" required /></label><br><br>
+      <label>Email: <input type="email" id="email" required /></label><br><br>
+      <label>Message:<br>
+        <textarea id="message" required></textarea>
+      </label><br><br>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formStatus"></p>
   </section>
 
   <footer>
     <p>&copy; 2025 My Portfolio</p>
   </footer>
+
+  <button id="toTop" onclick="scrollToTop()">↑</button>
 </body>
 </html>
