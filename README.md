@@ -1,5 +1,5 @@
 # Tell ME
-
+![image](img1.jpg)
 ## Remove Files Locally and Remotely
 
 ### 1. Remove files locally:
@@ -32,4 +32,4 @@ git tag -d tag-name
 git push origin --delete tag-name
 git push origin  :tag-name
 
-![Alt text for image](img1.jpg)
+
