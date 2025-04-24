@@ -1,4 +1,4 @@
-# Project Cleanup & Branch Management Guide
+# Tell ME
 
 ## Remove Files Locally and Remotely
 
@@ -6,4 +6,3 @@
 ```bash
 git rm page1.html script.js style.css
 git commit -m "Remove unnecessary files"
- 
